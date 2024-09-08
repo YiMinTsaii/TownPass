@@ -34,6 +34,7 @@ Future<void> initServices() async {
   await Get.putAsync<PackageService>(() async => await PackageService().init());
   await Get.putAsync<SharedPreferencesService>(() async => await SharedPreferencesService().init());
   await Get.putAsync<GeoLocatorService>(() async => await GeoLocatorService().init());
+
 }
 
 class MyApp extends StatelessWidget {

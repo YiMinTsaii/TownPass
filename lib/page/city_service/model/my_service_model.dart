@@ -28,6 +28,7 @@ enum MyServiceItemId {
   library,
   locationSearch,
   zoo,
+  artlooking,
   ;
 }
 
@@ -172,7 +173,14 @@ extension MyServiceIdExt on MyServiceItemId {
           description: '動物園區資訊導覽、線上地圖',
           icon: Assets.svg.iconZoo24.svg(),
           category: MyServiceCategory.explore,
-          destinationUrl: '',
+          destinationUrl: ''),
+
+       MyServiceItemId.artlooking => MyServiceItem(
+          title: '公共藝術',
+          description: '查看附近公共藝術品',
+          icon: Assets.svg.iconStatue.svg(),
+          category: MyServiceCategory.explore,
+          destinationUrl: 'https://townpass-20d9f.web.app',    
         ),
     };
   }
