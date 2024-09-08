@@ -180,7 +180,7 @@ extension MyServiceIdExt on MyServiceItemId {
           description: '查看附近公共藝術品',
           icon: Assets.svg.iconStatue.svg(),
           category: MyServiceCategory.explore,
-          destinationUrl: 'https://townpass-20d9f.web.app',    
+          destinationUrl: 'http://10.0.2.2:3000/',    
         ),
     };
   }
